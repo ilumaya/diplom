@@ -1,0 +1,316 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.main-header {
+    background-color: #DDC0AE;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center; /* Центрирование содержимого в заголовке */
+}
+
+.header-content {
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.profile-icon {
+    margin-left: auto;
+}
+
+.profile-icon img {
+    width: 30px; /* Размер иконки профиля */
+    height: auto;
+}
+
+.container {
+    max-width: 800px; /* Максимальная ширина контейнера */
+    margin: 20px auto; /* Центрирование контейнера */
+    padding: 20px; /* Отступы внутри контейнера */
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.page-indicator {
+    background-color: #A1613B; /* Цвет полоски */
+    height: 4px; /* Высота полоски */
+    width: 60%; /* Ширина полоски */
+    margin: 0 auto 20px auto; /* Центрирование полоски */
+}
+
+.list-section {
+    margin-top: 20px;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-item {
+    background-color: #FFF2EA;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background-color: #FFF2EA;
+    border: none;
+    text-align: left;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #FFF2EA;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 14px;
+}
+
+.card {
+    background-color: #FFF2EA; /* Цвет фона карточки */
+    border-radius: 15px;
+    padding: 10px; /* Уменьшенные отступы */
+    margin: 10px;
+    text-align: center; /* Центрирование текста */
+    width: calc(25% - 20px); /* Ширина карточки (4 в ряд) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень карточки */
+    display: flex; /* Используем flexbox для выравнивания */
+    flex-direction: column; /* Вертикальное направление */
+    justify-content: space-between; /* Разделение пространства между элементами */
+    height: 300px; /* Фиксированная высота карточки */
+}
+
+.card img {
+    max-width: 100%; /* Максимальная ширина изображения */
+    height: 178px; /* Фиксированная высота для изображения */
+    object-fit: cover; /* Обрезка изображения по размеру */
+    border-radius: 8px; /* Скругление углов изображения */
+    margin-bottom: 10px; /* Отступ снизу для изображения */
+}
+
+.card h3 {
+    font-size: 14px; /* Уменьшение размера заголовка */
+    margin: 5px 0; /* Убираем лишние отступы */
+}
+
+.card p {
+    font-size: 12px; /* Уменьшение размера текста */
+    margin: 5px 0; /* Убираем лишние отступы */
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between; /* Разделяем заголовок и кнопку */
+    align-items: center; /* Выравниваем по вертикали */
+}
+
+.add-button {
+    display: inline-flex; /* Используем flexbox для выравнивания */
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: center; /* Центрирование текста */
+    padding: 10px 15px; /* Уменьшенные отступы для высоты */
+    background-color: #A1613B; /* Цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Скругление углов кнопки */
+    border: none; /* Убираем границу */
+    cursor: pointer; /* Указываем, что это кнопка */
+    height: 35px; /* Установка фиксированной высоты */
+    min-width: 20px; /* Установка минимальной ширины */
+    box-sizing: border-box; /* Учитываем отступы в общей высоте и ширине */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+.add-button:hover {
+    background-color: #8b4f31; /* Цвет кнопки при наведении */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стили для сообщений об успехе и ошибках */
+.message {
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error {
+    background-color: #ffdddd;
+    color: #d8000c;
+    border: 1px solid #d8000c;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Убираем двойные границы */
+    margin-top: 20px; /* Отступ сверху для таблицы */
+}
+
+.table th, .table td {
+    padding: 12px; /* Увеличенные отступы для ячеек */
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Линия под ячейками */
+}
+
+.table th {
+    background-color: #A1613B; /* Цвет фона заголовков таблицы */
+    color: white; /* Цвет текста заголовков */
+}
+
+.table tr:hover {
+    background-color: #f1f1f1; /* Цвет строки при наведении */
+}
+
+.styles-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Центрирование блоков */
+    margin-top: 20px;
+}
+
+.accordion-item {
+    background-color: #FFF2EA; /* Цвет фона блока */
+    border-radius: 10px; /* Скругление углов */
+    margin: 10px; /* Отступы между блоками */
+    width: 100%; /* Ширина на 100% по умолчанию */
+    max-width: 800px; /* Максимальная ширина блока */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
+    overflow: hidden; /* Скрытие переполнения */
+}
+
+.accordion-button {
+    background-color: #A1613B; /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границы */
+    padding: 15px; /* Отступы */
+    width: 900px; /* Ширина кнопки */
+    text-align: left; /* Выравнивание текста */
+    cursor: pointer; /* Курсор при наведении */
+}
+
+.accordion-content {
+    padding: 15px; /* Отступы для контента */
+    display: none; /* Скрываем контент по умолчанию */
+}
+
+.accordion-item.active .accordion-content {
+    display: block; /* Показываем контент при активации */
+}
+
+/* Стили для наведения на ссылки в заголовке */
+.navbar a:hover {
+    text-decoration: underline; /* Подчеркивание текста при наведении */
+    color: #D8B8A1; /* Изменение цвета текста при наведении */
+}
+
+/* Стили для всплывающего сообщения */
+.profile-icon {
+    position: relative; /* Для позиционирования всплывающего сообщения */
+}
+
+.profile-icon .tooltip {
+    display: none; /* Скрываем сообщение по умолчанию */
+    position: absolute;
+    bottom: 100%; /* Позиционирование над элементом */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333; /* Цвет фона сообщения */
+    color: #fff; /* Цвет текста */
+    padding: 5px 10px; /* Отступы */
+    border-radius: 5px; /* Скругление углов */
+    white-space: nowrap; /* Убираем перенос строк */
+    z-index: 10; /* Уровень над другими элементами */
+}
+
+.profile-icon:hover .tooltip {
+    display: block; /* Показываем сообщение при наведении */
+}
