@@ -15,7 +15,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 12345
-      MYSQL_DATABASE: Гардэроб
+      MYSQL_DATABASE: Гардероб
       MYSQL_USER: root
       MYSQL_PASSWORD: 12345
     volumes:
