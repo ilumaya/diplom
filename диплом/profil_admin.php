@@ -149,7 +149,7 @@ $conn->close();
         <nav class="navbar">
             <ul>
                 <li><a href="admin.php">Добавление вещей</a></li>
-                <li><a href="admin2.php">Гардероб пользователей</a></li>
+                <li><a href="admin_users.php">Гардероб пользователей</a></li>
             </ul> 
             <div class="profile-icon">
                 <a href="profil_admin.php">
