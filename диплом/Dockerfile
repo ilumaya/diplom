@@ -2,7 +2,7 @@
 FROM php:8.1-apache
 
 # Установка зависимостей и расширений
-RUN docker-php-ext-install mysqli
+RUN docker-php-ext-install mysqli pdo_mysql
 
 # Копируем файлы приложения в контейнер
 COPY . /var/www/html/
