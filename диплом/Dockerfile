@@ -21,8 +21,5 @@ RUN chown -R www-data:www-data /var/www/html \
 # Включаем mod_rewrite
 RUN a2enmod rewrite
 
-# Устанавливаем временную зону
-ENV TZ=Europe/Moscow
-
 # Открываем порт 80
 EXPOSE 80
