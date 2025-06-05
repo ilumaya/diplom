@@ -4,6 +4,9 @@ FROM php:8.1-apache
 # Установка зависимостей и расширений
 RUN docker-php-ext-install mysqli
 
+# Включаем модуль rewrite
+RUN a2enmod rewrite
+
 # Копируем файлы приложения в контейнер
 COPY . /var/www/html/
 
