@@ -11,7 +11,7 @@ COPY . /var/www/html/
 RUN chown -R www-data:www-data /var/www/html
 
 # Настройка Apache для использования home.php как индексного файла
-RUN echo "DirectoryIndex home.php" >> /etc/apache2/apache2.conf
+RUN echo "DirectoryIndex home.php index.php index.html" >> /etc/apache2/apache2.conf
 
 # Открываем порт 80
 EXPOSE 80
